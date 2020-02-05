@@ -45,5 +45,3 @@ def main():
     print('The Weather Forecast of next 5 days(every three hours):')
     pprint(forecast['list'])
 
-if __name__ == "__main__":
-    main()
