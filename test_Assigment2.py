@@ -1,4 +1,4 @@
-from assigment2 import ttt
+from Assigment2 import ttt
 
 def test_ttt():
     assert ttt('Chengdu Shuangliu International Airport') == 'Chengdu'
