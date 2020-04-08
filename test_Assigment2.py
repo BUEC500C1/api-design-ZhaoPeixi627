@@ -1,9 +1,12 @@
-from Assigment2 import ttt
+import pytest
+from Assigment2 import *
 
 def test_ttt():
-    assert ttt('Chengdu Shuangliu International Airport') == 'Chengdu'
-    assert ttt('Boston Aerodrome') == 'Boston'
-    assert ttt('Beijing Capital International Airport') == 'Beijing'
-    assert ttt('John F Kennedy International Airport') == 'New York'
-    assert ttt('Los Angeles International Airport') == 'Los Angeles'
+    assert predict(123) == "Wrong Input"
+    assert predict("Shanghai") == "Wrong Input"
+    assert predict('Chengdu Shuangliu International Airport') != None
+    assert predict('Boston Aerodrome') != None
+    assert predict('Beijing Capital International Airport') != None
+    assert predict('John F Kennedy International Airport') != None
+    assert predict('xyz') == "Wrong Input"
     
